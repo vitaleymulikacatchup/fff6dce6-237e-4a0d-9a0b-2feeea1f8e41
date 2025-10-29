@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
@@ -12,9 +12,9 @@ import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Award, Camera, Compass, HelpCircle, Home, Package, Quote, Sparkles, Star, Truck, Users } from "lucide-react";
+import { Award, Camera, Compass, HelpCircle, Package, Quote, Sparkles, Star, Truck, Users } from "lucide-react";
 
-export default function Home() {
+export default function Page() {
   return (
     <ThemeProvider
       defaultButtonVariant="text-stagger"
@@ -24,14 +24,10 @@ export default function Home() {
       <div id="nav" data-section="nav">
         <NavbarStyleMinimal
           logoSrc="https://images.pexels.com/photos/13142739/pexels-photo-13142739.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          logoAlt="Wild Adventures Safari Logo"
           brandName="Wild Adventures"
           button={{
             text: "Book Safari",
-            href: "contact",
-            props: {
-              className: "bg-primary-cta text-background hover:bg-accent transition-colors"
-            }
+            href: "contact"
           }}
         />
       </div>
@@ -53,7 +49,7 @@ export default function Home() {
             }
           ]}
           imageSrc="https://images.pexels.com/photos/12445013/pexels-photo-12445013.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          imageAlt="African savanna landscape at sunset with acacia trees"
+          imageAlt="A serene scene of zebras standing amidst trees during sunset in Bela-Bela, South Africa."
           imagePosition="right"
         />
       </div>
@@ -103,7 +99,7 @@ export default function Home() {
             {
               title: "Luxury Bush Camps",
               description: "Stay in premium eco-friendly accommodations that blend comfort with authentic wilderness experiences",
-              icon: Home,
+              icon: Users,
               button: {
                 text: "See Accommodations",
                 href: "pricing"
@@ -208,14 +204,14 @@ export default function Home() {
               name: "Kofi Asante",
               role: "Senior Guide",
               imageSrc: "https://images.pexels.com/photos/12139246/pexels-photo-12139246.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Portrait of Kofi Asante, senior safari guide"
+              imageAlt: "Black and white photo of two men standing outdoors in uniforms, conveying strength."
             },
             {
               id: "2",
               name: "Sarah Mwangi",
               role: "Wildlife Expert",
               imageSrc: "https://images.pexels.com/photos/34415337/pexels-photo-34415337.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Portrait of Sarah Mwangi, wildlife expert"
+              imageAlt: "Detailed view of a person holding a camera in natural light, perfect for photography themes."
             }
           ]}
         />
@@ -235,7 +231,7 @@ export default function Home() {
               company: "National Geographic",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/34415337/pexels-photo-34415337.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Portrait of Michael Johnson"
+              imageAlt: "Detailed view of a person holding a camera in natural light, perfect for photography themes."
             },
             {
               id: "2",
@@ -244,7 +240,7 @@ export default function Home() {
               company: "Wanderlust Magazine",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/7009502/pexels-photo-7009502.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Portrait of Emma Rodriguez"
+              imageAlt: "A young woman wrapped in a red sleeping bag, smiling with a serene expression."
             },
             {
               id: "3",
@@ -253,7 +249,7 @@ export default function Home() {
               company: "Adventure Seekers",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/2386832/pexels-photo-2386832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Portrait of David and Lisa Chen"
+              imageAlt: "A couple embraces on rocky terrain during a golden sunset in Cape Town."
             },
             {
               id: "4",
@@ -262,7 +258,7 @@ export default function Home() {
               company: "Family Travel Co",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/33239448/pexels-photo-33239448.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Portrait of the Thompson family"
+              imageAlt: "A cheerful family enjoying a fun photo moment on a Cape Town beach."
             },
             {
               id: "5",
@@ -271,7 +267,7 @@ export default function Home() {
               company: "TechCorp Africa",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/8760429/pexels-photo-8760429.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Portrait of adventure group"
+              imageAlt: "Three women smiling and embracing at the beach, enjoying a summer day together."
             }
           ]}
         />
@@ -378,7 +374,7 @@ export default function Home() {
           }}
           buttonText="Book My Safari"
           imageSrc="https://images.pexels.com/photos/30878973/pexels-photo-30878973.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          imageAlt="African sunset with acacia tree silhouette"
+          imageAlt="Scenic view of African savannah with acacia trees at sunset, glowing warm tones."
           mediaPosition="right"
         />
       </div>
